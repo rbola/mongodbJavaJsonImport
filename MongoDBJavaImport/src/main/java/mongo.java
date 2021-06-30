@@ -30,7 +30,7 @@ import javax.naming.StringRefAddr;
 public class mongo {
     public static void main(String[] args) throws IOException {
 
-        com.mongodb.client.MongoClient client = MongoClients.create("<MongoDB Atlas Connection String>")
+        com.mongodb.client.MongoClient client = MongoClients.create("<MongoDB Atlas Connection String>");
 
         MongoDatabase database = client.getDatabase("rita");
         MongoCollection<org.bson.Document> coll = database.getCollection("test");
